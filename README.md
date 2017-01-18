@@ -17,10 +17,7 @@ The Coding Train Collective encourages the individual to discover, exercise and 
 Radical self-expression arises from the unique gifts of the individual. No one other than the individual or a collaborating group can determine its content. It is offered as a gift to others. In this spirit, the giver should respect the rights and liberties of the recipient.
 
 **In other words:**
-> Eight words The Coding Train fulfill: If it harms none, do what you will
-<sub><sup>__</sup></sub>
-
-
+> *"Eight words The Coding Train fulfill: If it harms none, do what you will"*
 
 ## Communal Effort
 Our community values creative cooperation and collaboration. We strive to produce, promote and protect social networks, public spaces, works of art, and methods of communication that support such interaction.
