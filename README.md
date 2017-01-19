@@ -4,11 +4,7 @@ The `0b1000` Principles
 ## <span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0001:</span> Radical Inclusion
 Anyone may be a part of The Coding Train Collective. We welcome and respect the stranger. No prerequisites exist for participation in our community. However, that does not mean there is a lack of consequences for your actions, be they positive or negative.
 
-```{javascript cmd:"node"}
-for(const i = 0; i < 100; i++) {
 
-}
-```
 ## <span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0010:</span> Helping
 The Coding Train Collective is devoted to acts of helping and artistic inspiration and expression. The value of help and encouragement is unconditional. Helping does not contemplate a return or an exchange for something of equal value (this includes receiving help and encouragement in return).
 
@@ -34,5 +30,10 @@ Our community is committed to a radically participatory ethic. We believe that t
 ## <span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>1000:</span> Immediacy
 Immediate experience is, in many ways, the most important touchstone of value in our culture. We seek to overcome barriers that stand between us and a recognition of our inner selves, the reality of those around us, participation in society, and contact with a digital world exceeding human powers. No idea can substitute for this experience.
 
--- Ada Lovecraft
-<span style="font-face: Hack; font-size: 8px">[Borrowed, remixed, and recontextualized from my fellow weirdos with ♡](http://burningman.org/culture/philosophical-center/10-principles/)</span>
+<hr/>
+
+<div class="footnote">
+
+[Borrowed, remixed, and recontextualized from my fellow weirdos with ♡](http://burningman.org/culture/philosophical-center/10-principles/)
+
+</div>
