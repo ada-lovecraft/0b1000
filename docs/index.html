@@ -300,7 +300,7 @@
 .markdown-preview-enhanced-custom table th { background-color: rgb(59, 66, 82); }
 .markdown-preview-enhanced-custom table tr { background-color: rgb(76, 86, 106); }
 .markdown-preview-enhanced-custom table tr:nth-child(2n) { background-color: rgb(40, 45, 55); }
-.markdown-preview-enhanced-custom pre { letter-spacing: 0em; font-family: Hack; }
+.markdown-preview-enhanced-custom pre { letter-spacing: 0em; font-family: Hack; font-size: 15px; }
 .markdown-preview-enhanced-custom .output-div pre { font-family: Inconsolata; font-size: 13px; line-height: 1em; color: rgb(216, 222, 233); }
 .markdown-preview-enhanced-custom .output-div pre br { display: block; height: 1px; content: "-"; margin: 5px 0px; background: rgb(67, 76, 94); }
 .markdown-preview-enhanced-custom .output-div pre::before { content: "console output:"; display: block; border-bottom: 1px solid rgb(67, 76, 94); margin-bottom: 5px; font-size: 10px; font-family: Hack; color: rgb(76, 86, 106); }
@@ -323,11 +323,215 @@
 .markdown-preview-enhanced table th { background-color: rgb(59, 66, 82) !important; }
 .markdown-preview-enhanced table tr { background-color: rgb(76, 86, 106) !important; }
 .markdown-preview-enhanced table tr:nth-child(2n) { background-color: rgb(40, 45, 55) !important; }
-.markdown-preview-enhanced pre { letter-spacing: 0em !important; font-family: Hack !important; }
+.markdown-preview-enhanced pre { letter-spacing: 0em !important; font-family: Hack !important; font-size: 15px !important; }
 .markdown-preview-enhanced .output-div pre { font-family: Inconsolata !important; font-size: 13px !important; line-height: 1em !important; color: rgb(216, 222, 233) !important; }
 .markdown-preview-enhanced .output-div pre br { display: block !important; height: 1px !important; content: "-" !important; margin: 5px 0px !important; background: rgb(67, 76, 94) !important; }
 .markdown-preview-enhanced .output-div pre::before { content: "console output:" !important; display: block !important; border-bottom: 1px solid rgb(67, 76, 94) !important; margin-bottom: 5px !important; font-size: 10px !important; font-family: Hack !important; color: rgb(76, 86, 106) !important; }
 .markdown-preview-enhanced .output-div pre::after { content: "›" !important; font-size: 14px !important; color: rgb(136, 192, 208) !important; }
+.pre.editor-colors .line.wlc::after,pre.editor-colors .line.wlc::after,
+pre.editor-colors .line.wlc::after {
+  color: #777777;
+}
+.pre.editor-colors .line.wle::after,pre.editor-colors .line.wle::after,
+pre.editor-colors .line.wle::after {
+  color: #cc0000;
+}
+.pre.editor-colors .wallaby-cov,pre.editor-colors .wallaby-cov,
+pre.editor-colors .wallaby-cov {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+}
+.pre.editor-colors .wallaby-cov-1,pre.editor-colors .wallaby-cov-1,
+pre.editor-colors .wallaby-cov-1 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #cccccc;
+}
+.pre.editor-colors .wallaby-cov-2,pre.editor-colors .wallaby-cov-2,
+pre.editor-colors .wallaby-cov-2 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #62b455;
+}
+.pre.editor-colors .wallaby-cov-3,pre.editor-colors .wallaby-cov-3,
+pre.editor-colors .wallaby-cov-3 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #d2a032;
+}
+.pre.editor-colors .wallaby-cov-4,pre.editor-colors .wallaby-cov-4,
+pre.editor-colors .wallaby-cov-4 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #fe536a;
+}
+.pre.editor-colors .wallaby-cov-5,pre.editor-colors .wallaby-cov-5,
+pre.editor-colors .wallaby-cov-5 {
+  width: 0.7em;
+  height: 0.7em !important;
+  border-radius: 2px;
+  left: 0.15em;
+  margin-top: 0.3em;
+  cursor: pointer;
+  background-color: #ffa0a0;
+}
+.pre.editor-colors .highlight.uncovered .region,pre.editor-colors .highlight.uncovered .region,
+pre.editor-colors .highlight.uncovered .region {
+  border: #fe536a 1px solid;
+}
+
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      UI Variables                                    +
+project    nord-atom-ui                                    +
+repository https://github.com/arcticicestudio/nord-atom-ui +
+author     Arctic Ice Studio                               +
+email      development@arcticicestudio.com                 +
+copyright  Copyright (C) 2016                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[Index]
+  > Animations
+  > Base
+      Background
+      Text
+  > Components
+      Button
+      Gutter
+      Input
+      Overlay
+      Pane
+      Panel
+      Progress Indicator
+      Scrollbar
+      Site
+      Tab
+      Tooltip
+      Tree View
+  > Configurations
+  > Fonts
+  > Package Support
+      build
+      imdone-atom
+      markdown-preview
+  > Sizes
+      Base
+      Font
+      Input
+      Tab
+*/
+/*+---------+
+  + Imports +
+  +---------+*/
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Nord                                    +
+project    nord                                    +
+version    0.1.0                                   +
+repository https://github.com/arcticicestudio/nord +
+author     Arctic Ice Studio                       +
+email      development@arcticicestudio.com         +
+copyright  Copyright (C) 2016                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[References]
+KSS
+  (http://warpspire.com/kss)
+kss-node
+  (https://github.com/kss-node/kss-node)
+*/
+/*+------------+
+  + Animations +
+  +------------+*/
+/*+------+
+  + Base +
+  +------+*/
+/*+--- Background ---+*/
+/*+--- Text ---+*/
+/*+------------+
+  + Components +
+  +------------+*/
+/*+--- Button ---+*/
+/*+--- Gutter ---+*/
+/*+--- Input ---+*/
+/*+--- Overlay ---+*/
+/*+--- Pane ---+*/
+/*+--- Panel ---+*/
+/*+--- Progress Indicator ---+*/
+/*+--- Scrollbar ---+*/
+/*+--- Site ---+*/
+/*+--- Tab ---+*/
+/*+--- Tooltip ---+*/
+/*+--- Tree View ---+*/
+/*+----------------+
+  + Configurations +
+  +----------------+*/
+/*+-------+
+  + Fonts +
+  +-------+*/
+/*+-----------------+
+  + Package Support +
+  +-----------------+*/
+/*+--- build ---+*/
+/*+--- imdone-atom ---+*/
+/*+--- markdown-preview ---+*/
+/*+--- tool-bar ---+*/
+/*+-------+
+  + Sizes +
+  +-------+*/
+/*+--- Base ---+*/
+/*+--- Font ---+*/
+/*+--- Input ---+*/
+/*+--- List ---+*/
+/*+--- Tab ---+*/
+.conflict-resolved {
+  background: #434c5e;
+}
+.conflict-ours {
+  background: rgba(136, 192, 208, 0.4);
+}
+.conflict-ours.cursor-line {
+  background: rgba(136, 192, 208, 0.3);
+}
+.conflict-theirs {
+  background: rgba(163, 190, 140, 0.4);
+}
+.conflict-theirs.cursor-line {
+  background: rgba(163, 190, 140, 0.3);
+}
+.conflict-base {
+  background: rgba(208, 135, 112, 0.4);
+}
+.conflict-base.cursor-line {
+  background: rgba(208, 135, 112, 0.3);
+}
+.conflict-dirty {
+  background: rgba(235, 203, 139, 0.4);
+}
+.conflict-dirty.cursor-line {
+  background: rgba(235, 203, 139, 0.3);
+}
+
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
@@ -344,7 +548,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Index                                               +
 project    nord-atom-syntax                                    +
-version    0.4.0                                               +
+version    0.5.0                                               +
 repository https://github.com/arcticicestudio/nord-atom-syntax +
 author     Arctic Ice Studio                                   +
 email      development@arcticicestudio.com                     +
@@ -969,6 +1173,32 @@ W3C
 }
 /*
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Language Elixir                                         +
+project    nord-atom-syntax                                    +
+repository https://github.com/arcticicestudio/nord-atom-syntax +
+author     Arctic Ice Studio                                   +
+email      development@arcticicestudio.com                     +
+copyright  Copyright (C) 2016                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[Language Packages]
+  > language-elixir (https://atom.io/packages/language-elixir)
+
+[References]
+Elixir
+  (http://elixir-lang.org)
+*/
+.syntax--source.syntax--elixir .syntax--variable.syntax--other.syntax--readwrite.syntax--module {
+  color: #d08770;
+}
+.syntax--source.syntax--elixir .syntax--variable.syntax--other.syntax--readwrite.syntax--constant {
+  color: #8fbcbb;
+}
+.syntax--source.syntax--elixir .syntax--punctuation.syntax--definition.syntax--variable {
+  color: #d08770;
+}
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 title      Language GitHub Flavored Markdown                   +
 project    nord-atom-syntax                                    +
 repository https://github.com/arcticicestudio/nord-atom-syntax +
@@ -1446,27 +1676,31 @@ W3C
   color: #4c566a;
   font-weight: bold;
 }
- </style> <link rel="stylesheet" href="file:////Users/Ada/.atom/packages/markdown-preview-enhanced/node_modules/katex/dist/katex.min.css">  </head> <body class="markdown-preview-enhanced " data-use-github-style data-use-github-syntax-theme > <h1 class="sync-line" data-line="0" id="the-0b1000-principles">The <code>0b1000</code> Principles</h1>
-<h2 class="sync-line" data-line="3" id="radical-inclusion">Radical Inclusion</h2>
-<p class="sync-line" data-line="4">Anyone may be a part of The Coding Train. We welcome and respect the stranger. No prerequisites exist for participation in our community. However, that does not mean there is a lack of consequences for your actions, be they positive or negative</p>
-<h2 class="sync-line" data-line="6" id="helping">Helping</h2>
-<p class="sync-line" data-line="7">The Coding Train Collective is devoted to acts of helping and artistic inspiration and expression. The value of help and encouragement is unconditional. Helping does not contemplate a return or an exchange for something of equal value (this includes receiving help and encouragement in return).</p>
-<h2 class="sync-line" data-line="9" id="open-source-ness">Open Source-ness</h2>
-<p class="sync-line" data-line="10">In order to preserve the spirit of intellectual progress, our community seeks to create contemplative and interesting environments that are unmediated by commercial sponsorships, transactions, or advertising. We stand ready to protect our culture from such exploitation. We resist the substitution of consumption for participatory experience. This community huddles around the an idea that one brilliant idea begets another. Every single new mind we bring to The Coding Train Collective is one more opportunity to be astounded and further educate yourself by all of those fuzzy-logic humans around you.</p>
-<h2 class="sync-line" data-line="12" id="radical-self-reliance">Radical Self-Reliance</h2>
-<p class="sync-line" data-line="13">The Coding Train Collective encourages the individual to discover, exercise and rely on his or her inner resources. Ask for help, but be ready to read documentation and experiment with code, document your process wether it be via comments, blog posts, video updates, or simply sharing with your fellow Trainees.</p>
-<h2 class="sync-line" data-line="15" id="radical-self-expression">Radical Self-Expression</h2>
-<p class="sync-line" data-line="16">Radical self-expression arises from the unique gifts of the individual. No one other than the individual or a collaborating group can determine its content. It is offered as a gift to others. In this spirit, the giver should respect the rights and liberties of the recipient.</p>
-<p class="sync-line" data-line="18"><strong>In other words:</strong></p>
+ </style> <link rel="stylesheet" href="file:////Users/Ada/.atom/packages/markdown-preview-enhanced/node_modules/katex/dist/katex.min.css">  </head> <body class="markdown-preview-enhanced "   > <h1 class="sync-line" data-line="0" id="the-0b1000-principles">The <code>0b1000</code> Principles</h1>
+<h2 class="sync-line" data-line="3" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0001span-radical-inclusion"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0001:</span> Radical Inclusion</h2>
+<p class="sync-line" data-line="4">Anyone may be a part of The Coding Train Collective. We welcome and respect the stranger. No prerequisites exist for participation in our community. However, that does not mean there is a lack of consequences for your actions, be they positive or negative.</p>
+<div class="code-chunk" data-lang="javascript" data-args="cmd:&quot;node&quot;" data-line="6" data-code="for(const i = 0; i &lt; 100; i++) {
+
+}
+"><pre class="editor-colors lang-javascript sync-line" data-line="6"><div class="line"><span class="source js"><span class="keyword control js"><span>for</span></span><span class="meta brace round js"><span>(</span></span><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>i</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>0</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&nbsp;i&nbsp;</span><span class="keyword operator comparison js"><span>&lt;</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>100</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&nbsp;i</span><span class="keyword operator increment js"><span>++</span></span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span></span></div></pre><div class="btn-group"><div class="run-btn btn"><span>▶︎</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div>
+<h2 class="sync-line" data-line="11" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0010span-helping"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0010:</span> Helping</h2>
+<p class="sync-line" data-line="12">The Coding Train Collective is devoted to acts of helping and artistic inspiration and expression. The value of help and encouragement is unconditional. Helping does not contemplate a return or an exchange for something of equal value (this includes receiving help and encouragement in return).</p>
+<h2 class="sync-line" data-line="14" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0011span-open-source-ness"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0011:</span> Open Source-ness</h2>
+<p class="sync-line" data-line="15">In order to preserve the spirit of intellectual progress, our community seeks to create contemplative and interesting environments that are unmediated by commercial sponsorships, transactions, or advertising. We stand ready to protect our culture from such exploitation. We resist the substitution of consumption for participatory experience. This community huddles around the an idea that one brilliant idea begets another. Every single new mind we bring to The Coding Train Collective is one more opportunity to be astounded and further educate yourself by all of those fuzzy-logic humans around you.</p>
+<h2 class="sync-line" data-line="17" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0100span-radical-self-reliance"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0100:</span> Radical Self-Reliance</h2>
+<p class="sync-line" data-line="18">The Coding Train Collective encourages the individual to discover, exercise and rely on his or her inner resources. Ask for help, but be ready to read documentation and experiment with code, document your process wether it be via comments, blog posts, video updates, or simply sharing with your fellow Trainees.</p>
+<h2 class="sync-line" data-line="20" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0101span-radical-self-expression"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0101:</span> Radical Self-Expression</h2>
+<p class="sync-line" data-line="21">Radical self-expression arises from the unique gifts of the individual. No one other than the individual or a collaborating group can determine its content. It is offered as a gift to others. In this spirit, the giver should respect the rights and liberties of the recipient.</p>
+<p class="sync-line" data-line="23"><strong>In other words:</strong></p>
 <blockquote>
-<p class="sync-line" data-line="19"><em>“Eight words The Coding Train fulfill: If it harms none, do what you will”</em></p>
+<p class="sync-line" data-line="24"><em>“Eight words The Coding Train fulfill: If it harms none, do what you will”</em></p>
 </blockquote>
-<h2 class="sync-line" data-line="21" id="communal-effort">Communal Effort</h2>
-<p class="sync-line" data-line="22">Our community values creative cooperation and collaboration. We strive to produce, promote and protect social networks, public spaces, works of art, and methods of communication that support such interaction.</p>
-<h2 class="sync-line" data-line="25" id="participation">Participation</h2>
-<p class="sync-line" data-line="26">Our community is committed to a radically participatory ethic. We believe that transformative change, whether in the individual or in society, can occur only through the medium of deeply personal participation. We achieve being through doing. Everyone is invited to work. Everyone is invited to play. We make the world real through actions that open the heart.</p>
-<h2 class="sync-line" data-line="28" id="immediacy">Immediacy</h2>
-<p class="sync-line" data-line="29">Immediate experience is, in many ways, the most important touchstone of value in our culture. We seek to overcome barriers that stand between us and a recognition of our inner selves, the reality of those around us, participation in society, and contact with a digital world exceeding human powers. No idea can substitute for this experience.</p>
-<p class="sync-line" data-line="31">– Ada Lovecraft<br>
+<h2 class="sync-line" data-line="26" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0110span-communal-effort"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0110:</span> Communal Effort</h2>
+<p class="sync-line" data-line="27">Our community values creative cooperation and collaboration. We strive to produce, promote and protect social networks, public spaces, works of art, and methods of communication that support such interaction.</p>
+<h2 class="sync-line" data-line="30" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0111span-participation"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0111:</span> Participation</h2>
+<p class="sync-line" data-line="31">Our community is committed to a radically participatory ethic. We believe that transformative change, whether in the individual or in society, can occur only through the medium of deeply personal participation. We achieve being through doing. Everyone is invited to work. Everyone is invited to play. We make the world real through actions that open the heart.</p>
+<h2 class="sync-line" data-line="33" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan1000span-immediacy"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>1000:</span> Immediacy</h2>
+<p class="sync-line" data-line="34">Immediate experience is, in many ways, the most important touchstone of value in our culture. We seek to overcome barriers that stand between us and a recognition of our inner selves, the reality of those around us, participation in society, and contact with a digital world exceeding human powers. No idea can substitute for this experience.</p>
+<p class="sync-line" data-line="36">– Ada Lovecraft<br>
 <span style="font-face: Hack; font-size: 8px"><a href="http://burningman.org/culture/philosophical-center/10-principles/">Borrowed, remixed, and recontextualized from my fellow weirdos with ♡</a></span></p>
  </body>  </html>

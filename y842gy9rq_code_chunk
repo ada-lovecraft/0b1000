@@ -1,0 +1,3 @@
+actions.forEach(function(action) {
+  return -action
+}
