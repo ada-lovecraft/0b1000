@@ -282,46 +282,50 @@
 .markdown-preview-enhanced[data-presentation-mode] strong { font-weight: bold; }
 .markdown-preview-enhanced[data-presentation-mode]::-webkit-scrollbar { display: none; }
 .markdown-preview-enhanced .slides { text-align: left !important; }
-.markdown-preview-enhanced-custom { font-family: Hack; font-size: 15px; color: rgb(187, 187, 187); font-weight: 500; background-color: rgb(46, 52, 64); }
+.markdown-preview-enhanced-custom { font-size: 15px; color: rgb(187, 187, 187); font-family: Hack !important; background-color: rgb(46, 52, 64); }
+.markdown-preview-enhanced-custom .footnote { font-size: 8px; text-align: center; }
 .markdown-preview-enhanced-custom blockquote { border-left-color: rgb(59, 66, 82); }
-.markdown-preview-enhanced-custom h2, .markdown-preview-enhanced-custom h3, .markdown-preview-enhanced-custom h4, .markdown-preview-enhanced-custom h5 { color: rgb(187, 187, 187); border-bottom: none; font-size: 15px; font-weight: lighter; }
-.markdown-preview-enhanced-custom h1 { color: rgb(187, 187, 187); }
+.markdown-preview-enhanced-custom p { margin-bottom: 40px; }
+.markdown-preview-enhanced-custom h1, .markdown-preview-enhanced-custom h2, .markdown-preview-enhanced-custom h3, .markdown-preview-enhanced-custom h4, .markdown-preview-enhanced-custom h5 { font-family: Hack, monospace; border-bottom: none; padding-top: 5px; border-radius: 2px; }
+.markdown-preview-enhanced-custom h2 { color: rgb(46, 52, 64); font-size: 18px; letter-spacing: 0.1em; font-weight: normal; font-variant: small-caps; border-bottom: none; margin-bottom: 10px; margin-top: 0px; padding-left: 5px; background-color: rgb(229, 233, 240); }
+.markdown-preview-enhanced-custom h2::before { content: "// "; }
+.markdown-preview-enhanced-custom h1 { color: rgb(187, 187, 187); border-bottom: 1px solid rgb(94, 129, 172); }
+.markdown-preview-enhanced-custom h5 { font-weight: 100; font-size: 10px; }
 .markdown-preview-enhanced-custom a { display: inline-block; color: rgba(129, 161, 193, 0.498039); position: relative; }
 .markdown-preview-enhanced-custom a::after { content: ""; width: 100%; position: absolute; bottom: -0.1em; left: 0%; border: 1px solid rgba(129, 161, 193, 0.0980392); }
 .markdown-preview-enhanced-custom a:hover, .markdown-preview-enhanced-custom a:visited { color: rgb(106, 161, 217); }
 .markdown-preview-enhanced-custom a:hover::after, .markdown-preview-enhanced-custom a:visited::after { border-color: rgba(129, 161, 193, 0.0980392); }
-.markdown-preview-enhanced-custom code { padding: 2px 4px; font-size: 90%; color: rgb(59, 66, 82); border-radius: 2px; background-color: rgb(216, 222, 233) !important; background-clip: padding-box; }
-.markdown-preview-enhanced-custom .sync-line { padding-bottom: 0em; }
-.markdown-preview-enhanced-custom h2.sync-line { color: rgb(76, 86, 106); font-size: 18px; letter-spacing: 0.1em; font-weight: normal; font-variant: small-caps; border-bottom: rgb(76, 86, 106); margin-bottom: 10px; margin-top: 0px; background-color: rgb(46, 52, 64); }
-.markdown-preview-enhanced-custom h2.sync-line::before { content: "// "; }
-.markdown-preview-enhanced-custom hr { border: 1px solid rgb(59, 66, 82); }
+.markdown-preview-enhanced-custom code { padding: 2px 4px; font-size: 90%; color: rgb(59, 66, 82); border-radius: 2px; background-color: rgb(187, 187, 187) !important; background-clip: padding-box; }
+.markdown-preview-enhanced-custom hr { height: 0px; border-right: none; border-bottom: none; border-left: none; border-top: 1px solid rgb(94, 129, 172); }
 .markdown-preview-enhanced-custom strong { color: rgb(187, 187, 187); }
 .markdown-preview-enhanced-custom table td, .markdown-preview-enhanced-custom table th { border-color: transparent; }
 .markdown-preview-enhanced-custom table th { background-color: rgb(59, 66, 82); }
-.markdown-preview-enhanced-custom table tr { background-color: rgb(76, 86, 106); }
+.markdown-preview-enhanced-custom table tr { }
 .markdown-preview-enhanced-custom table tr:nth-child(2n) { background-color: rgb(40, 45, 55); }
 .markdown-preview-enhanced-custom pre { letter-spacing: 0em; font-family: Hack; font-size: 15px; }
 .markdown-preview-enhanced-custom .output-div pre { font-family: Inconsolata; font-size: 13px; line-height: 1em; color: rgb(216, 222, 233); }
 .markdown-preview-enhanced-custom .output-div pre br { display: block; height: 1px; content: "-"; margin: 5px 0px; background: rgb(67, 76, 94); }
 .markdown-preview-enhanced-custom .output-div pre::before { content: "console output:"; display: block; border-bottom: 1px solid rgb(67, 76, 94); margin-bottom: 5px; font-size: 10px; font-family: Hack; color: rgb(76, 86, 106); }
 .markdown-preview-enhanced-custom .output-div pre::after { content: "›"; font-size: 14px; color: rgb(136, 192, 208); }
-.markdown-preview-enhanced { font-family: Hack !important; font-size: 15px !important; color: rgb(187, 187, 187) !important; font-weight: 500 !important; background-color: rgb(46, 52, 64) !important; }
+.markdown-preview-enhanced { font-family: Hack !important; font-size: 15px !important; color: rgb(187, 187, 187) !important; background-color: rgb(46, 52, 64) !important; }
+.markdown-preview-enhanced .footnote { font-size: 8px !important; text-align: center !important; }
 .markdown-preview-enhanced blockquote { border-left-color: rgb(59, 66, 82) !important; }
-.markdown-preview-enhanced h2, .markdown-preview-enhanced h3, .markdown-preview-enhanced h4, .markdown-preview-enhanced h5 { color: rgb(187, 187, 187) !important; border-bottom: none !important; font-size: 15px !important; font-weight: lighter !important; }
-.markdown-preview-enhanced h1 { color: rgb(187, 187, 187) !important; }
+.markdown-preview-enhanced p { margin-bottom: 40px !important; }
+.markdown-preview-enhanced h1, .markdown-preview-enhanced h2, .markdown-preview-enhanced h3, .markdown-preview-enhanced h4, .markdown-preview-enhanced h5 { font-family: Hack, monospace !important; border-bottom: none !important; padding-top: 5px !important; border-radius: 2px !important; }
+.markdown-preview-enhanced h2 { color: rgb(46, 52, 64) !important; font-size: 18px !important; letter-spacing: 0.1em !important; font-weight: normal !important; font-variant: small-caps !important; border-bottom: none !important; margin-bottom: 10px !important; margin-top: 0px !important; padding-left: 5px !important; background-color: rgb(229, 233, 240) !important; }
+.markdown-preview-enhanced h2::before { content: "// " !important; }
+.markdown-preview-enhanced h1 { color: rgb(187, 187, 187) !important; border-bottom: 1px solid rgb(94, 129, 172) !important; }
+.markdown-preview-enhanced h5 { font-weight: 100 !important; font-size: 10px !important; }
 .markdown-preview-enhanced a { display: inline-block !important; color: rgba(129, 161, 193, 0.498039) !important; position: relative !important; }
 .markdown-preview-enhanced a::after { content: "" !important; width: 100% !important; position: absolute !important; bottom: -0.1em !important; left: 0% !important; border: 1px solid rgba(129, 161, 193, 0.0980392) !important; }
 .markdown-preview-enhanced a:hover, .markdown-preview-enhanced a:visited { color: rgb(106, 161, 217) !important; }
 .markdown-preview-enhanced a:hover::after, .markdown-preview-enhanced a:visited::after { border-color: rgba(129, 161, 193, 0.0980392) !important; }
-.markdown-preview-enhanced code { padding: 2px 4px !important; font-size: 90% !important; color: rgb(59, 66, 82) !important; border-radius: 2px !important; background-color: rgb(216, 222, 233) !important; background-clip: padding-box !important; }
-.markdown-preview-enhanced .sync-line { padding-bottom: 0em !important; }
-.markdown-preview-enhanced h2.sync-line { color: rgb(76, 86, 106) !important; font-size: 18px !important; letter-spacing: 0.1em !important; font-weight: normal !important; font-variant: small-caps !important; border-bottom: rgb(76, 86, 106) !important; margin-bottom: 10px !important; margin-top: 0px !important; background-color: rgb(46, 52, 64) !important; }
-.markdown-preview-enhanced h2.sync-line::before { content: "// " !important; }
-.markdown-preview-enhanced hr { border: 1px solid rgb(59, 66, 82) !important; }
+.markdown-preview-enhanced code { padding: 2px 4px !important; font-size: 90% !important; color: rgb(59, 66, 82) !important; border-radius: 2px !important; background-color: rgb(187, 187, 187) !important; background-clip: padding-box !important; }
+.markdown-preview-enhanced hr { height: 0px !important; border-right: none !important; border-bottom: none !important; border-left: none !important; border-top: 1px solid rgb(94, 129, 172) !important; }
 .markdown-preview-enhanced strong { color: rgb(187, 187, 187) !important; }
 .markdown-preview-enhanced table td, .markdown-preview-enhanced table th { border-color: transparent !important; }
 .markdown-preview-enhanced table th { background-color: rgb(59, 66, 82) !important; }
-.markdown-preview-enhanced table tr { background-color: rgb(76, 86, 106) !important; }
+.markdown-preview-enhanced table tr { }
 .markdown-preview-enhanced table tr:nth-child(2n) { background-color: rgb(40, 45, 55) !important; }
 .markdown-preview-enhanced pre { letter-spacing: 0em !important; font-family: Hack !important; font-size: 15px !important; }
 .markdown-preview-enhanced .output-div pre { font-family: Inconsolata !important; font-size: 13px !important; line-height: 1em !important; color: rgb(216, 222, 233) !important; }
@@ -1679,28 +1683,26 @@ W3C
  </style> <link rel="stylesheet" href="file:////Users/Ada/.atom/packages/markdown-preview-enhanced/node_modules/katex/dist/katex.min.css">  </head> <body class="markdown-preview-enhanced "   > <h1 class="sync-line" data-line="0" id="the-0b1000-principles">The <code>0b1000</code> Principles</h1>
 <h2 class="sync-line" data-line="3" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0001span-radical-inclusion"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0001:</span> Radical Inclusion</h2>
 <p class="sync-line" data-line="4">Anyone may be a part of The Coding Train Collective. We welcome and respect the stranger. No prerequisites exist for participation in our community. However, that does not mean there is a lack of consequences for your actions, be they positive or negative.</p>
-<div class="code-chunk" data-lang="javascript" data-args="cmd:&quot;node&quot;" data-line="6" data-code="for(const i = 0; i &lt; 100; i++) {
-
-}
-"><pre class="editor-colors lang-javascript sync-line" data-line="6"><div class="line"><span class="source js"><span class="keyword control js"><span>for</span></span><span class="meta brace round js"><span>(</span></span><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>i</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>0</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&nbsp;i&nbsp;</span><span class="keyword operator comparison js"><span>&lt;</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>100</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&nbsp;i</span><span class="keyword operator increment js"><span>++</span></span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span></span></div></pre><div class="btn-group"><div class="run-btn btn"><span>▶︎</span></div><div class="run-all-btn btn">all</div></div><div class="status">running...</div></div>
-<h2 class="sync-line" data-line="11" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0010span-helping"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0010:</span> Helping</h2>
-<p class="sync-line" data-line="12">The Coding Train Collective is devoted to acts of helping and artistic inspiration and expression. The value of help and encouragement is unconditional. Helping does not contemplate a return or an exchange for something of equal value (this includes receiving help and encouragement in return).</p>
-<h2 class="sync-line" data-line="14" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0011span-open-source-ness"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0011:</span> Open Source-ness</h2>
-<p class="sync-line" data-line="15">In order to preserve the spirit of intellectual progress, our community seeks to create contemplative and interesting environments that are unmediated by commercial sponsorships, transactions, or advertising. We stand ready to protect our culture from such exploitation. We resist the substitution of consumption for participatory experience. This community huddles around the an idea that one brilliant idea begets another. Every single new mind we bring to The Coding Train Collective is one more opportunity to be astounded and further educate yourself by all of those fuzzy-logic humans around you.</p>
-<h2 class="sync-line" data-line="17" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0100span-radical-self-reliance"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0100:</span> Radical Self-Reliance</h2>
-<p class="sync-line" data-line="18">The Coding Train Collective encourages the individual to discover, exercise and rely on his or her inner resources. Ask for help, but be ready to read documentation and experiment with code, document your process wether it be via comments, blog posts, video updates, or simply sharing with your fellow Trainees.</p>
-<h2 class="sync-line" data-line="20" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0101span-radical-self-expression"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0101:</span> Radical Self-Expression</h2>
-<p class="sync-line" data-line="21">Radical self-expression arises from the unique gifts of the individual. No one other than the individual or a collaborating group can determine its content. It is offered as a gift to others. In this spirit, the giver should respect the rights and liberties of the recipient.</p>
-<p class="sync-line" data-line="23"><strong>In other words:</strong></p>
+<h2 class="sync-line" data-line="7" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0010span-helping"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0010:</span> Helping</h2>
+<p class="sync-line" data-line="8">The Coding Train Collective is devoted to acts of helping and artistic inspiration and expression. The value of help and encouragement is unconditional. Helping does not contemplate a return or an exchange for something of equal value (this includes receiving help and encouragement in return).</p>
+<h2 class="sync-line" data-line="10" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0011span-open-source-ness"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0011:</span> Open Source-ness</h2>
+<p class="sync-line" data-line="11">In order to preserve the spirit of intellectual progress, our community seeks to create contemplative and interesting environments that are unmediated by commercial sponsorships, transactions, or advertising. We stand ready to protect our culture from such exploitation. We resist the substitution of consumption for participatory experience. This community huddles around the an idea that one brilliant idea begets another. Every single new mind we bring to The Coding Train Collective is one more opportunity to be astounded and further educate yourself by all of those fuzzy-logic humans around you.</p>
+<h2 class="sync-line" data-line="13" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0100span-radical-self-reliance"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0100:</span> Radical Self-Reliance</h2>
+<p class="sync-line" data-line="14">The Coding Train Collective encourages the individual to discover, exercise and rely on his or her inner resources. Ask for help, but be ready to read documentation and experiment with code, document your process wether it be via comments, blog posts, video updates, or simply sharing with your fellow Trainees.</p>
+<h2 class="sync-line" data-line="16" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0101span-radical-self-expression"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0101:</span> Radical Self-Expression</h2>
+<p class="sync-line" data-line="17">Radical self-expression arises from the unique gifts of the individual. No one other than the individual or a collaborating group can determine its content. It is offered as a gift to others. In this spirit, the giver should respect the rights and liberties of the recipient.</p>
+<p class="sync-line" data-line="19"><strong>In other words:</strong></p>
 <blockquote>
-<p class="sync-line" data-line="24"><em>“Eight words The Coding Train fulfill: If it harms none, do what you will”</em></p>
+<p class="sync-line" data-line="20"><em>“Eight words The Coding Train fulfill: If it harms none, do what you will”</em></p>
 </blockquote>
-<h2 class="sync-line" data-line="26" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0110span-communal-effort"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0110:</span> Communal Effort</h2>
-<p class="sync-line" data-line="27">Our community values creative cooperation and collaboration. We strive to produce, promote and protect social networks, public spaces, works of art, and methods of communication that support such interaction.</p>
-<h2 class="sync-line" data-line="30" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0111span-participation"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0111:</span> Participation</h2>
-<p class="sync-line" data-line="31">Our community is committed to a radically participatory ethic. We believe that transformative change, whether in the individual or in society, can occur only through the medium of deeply personal participation. We achieve being through doing. Everyone is invited to work. Everyone is invited to play. We make the world real through actions that open the heart.</p>
-<h2 class="sync-line" data-line="33" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan1000span-immediacy"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>1000:</span> Immediacy</h2>
-<p class="sync-line" data-line="34">Immediate experience is, in many ways, the most important touchstone of value in our culture. We seek to overcome barriers that stand between us and a recognition of our inner selves, the reality of those around us, participation in society, and contact with a digital world exceeding human powers. No idea can substitute for this experience.</p>
-<p class="sync-line" data-line="36">– Ada Lovecraft<br>
-<span style="font-face: Hack; font-size: 8px"><a href="http://burningman.org/culture/philosophical-center/10-principles/">Borrowed, remixed, and recontextualized from my fellow weirdos with ♡</a></span></p>
+<h2 class="sync-line" data-line="22" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0110span-communal-effort"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0110:</span> Communal Effort</h2>
+<p class="sync-line" data-line="23">Our community values creative cooperation and collaboration. We strive to produce, promote and protect social networks, public spaces, works of art, and methods of communication that support such interaction.</p>
+<h2 class="sync-line" data-line="26" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan0111span-participation"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>0111:</span> Participation</h2>
+<p class="sync-line" data-line="27">Our community is committed to a radically participatory ethic. We believe that transformative change, whether in the individual or in society, can occur only through the medium of deeply personal participation. We achieve being through doing. Everyone is invited to work. Everyone is invited to play. We make the world real through actions that open the heart.</p>
+<h2 class="sync-line" data-line="29" id="span-stylefont-variant-normal-important-text-transform-uppercase0span-styletext-transform-lowercasebspan1000span-immediacy"><span style="font-variant: normal !important; text-transform: uppercase;">0<span style="text-transform: lowercase">b</span>1000:</span> Immediacy</h2>
+<p class="sync-line" data-line="30">Immediate experience is, in many ways, the most important touchstone of value in our culture. We seek to overcome barriers that stand between us and a recognition of our inner selves, the reality of those around us, participation in society, and contact with a digital world exceeding human powers. No idea can substitute for this experience.</p>
+<hr>
+<div class="footnote">
+<p class="sync-line" data-line="36"><a href="http://burningman.org/culture/philosophical-center/10-principles/">Borrowed, remixed, and recontextualized from my fellow weirdos with ♡</a></p>
+</div>
  </body>  </html>
